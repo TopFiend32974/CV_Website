@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home on Jamie Dean - Software Engineer</title>
+    <link>http://localhost:1313/CV_Website/</link>
+    <description>Recent content in Home on Jamie Dean - Software Engineer</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 11 Nov 2025 20:09:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/CV_Website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/CV_Website/contact/</link>
+      <pubDate>Tue, 11 Nov 2025 20:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/CV_Website/contact/</guid>
+      <description>&lt;h1 id=&#34;get-in-touch&#34;&gt;Get In Touch&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m always open to discussing new opportunities, collaborations, or just chatting about technology.&lt;/p&gt;
+&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:jamie.dean@example.com&#34;&gt;jamie.dean@example.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://linkedin.com/in/jamiedean&#34;&gt;linkedin.com/in/jamiedean&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/jamiedean&#34;&gt;github.com/jamiedean&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: United Kingdom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to reach out!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Skills</title>
+      <link>http://localhost:1313/CV_Website/skills/</link>
+      <pubDate>Tue, 11 Nov 2025 20:08:00 +0000</pubDate>
+      <guid>http://localhost:1313/CV_Website/skills/</guid>
+      <description>&lt;h1 id=&#34;skills--technologies&#34;&gt;Skills &amp;amp; Technologies&lt;/h1&gt;
+&lt;h2 id=&#34;programming-languages&#34;&gt;Programming Languages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript/TypeScript&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Go (learning)&lt;/li&gt;
+&lt;li&gt;SQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;frameworks--libraries&#34;&gt;Frameworks &amp;amp; Libraries&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next.js&lt;/li&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;Express&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools--technologies&#34;&gt;Tools &amp;amp; Technologies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker / Podman&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;Git / GitHub Actions&lt;/li&gt;
+&lt;li&gt;CI/CD Pipelines&lt;/li&gt;
+&lt;li&gt;Unit Testing, Integration Testing, System Testing&lt;/li&gt;
+&lt;li&gt;LLM Integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;certifications--cpd&#34;&gt;Certifications &amp;amp; CPD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS Foundations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;soft-skills&#34;&gt;Soft Skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem Solving&lt;/li&gt;
+&lt;li&gt;Team Collaboration&lt;/li&gt;
+&lt;li&gt;Project Management&lt;/li&gt;
+&lt;li&gt;Continuous Learning&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>http://localhost:1313/CV_Website/experience/</link>
+      <pubDate>Tue, 11 Nov 2025 20:07:14 +0000</pubDate>
+      <guid>http://localhost:1313/CV_Website/experience/</guid>
+      <description>&lt;h1 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h1&gt;
+&lt;h2 id=&#34;current-role-novarapro-saas-wholesale-bakery-management-system&#34;&gt;Current Role: NovaraPro (SaaS Wholesale Bakery Management System)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies&lt;/strong&gt;: Next.js, CI/CD, PostgreSQL, LLM, Docker/Podman Images, Unit Testing, Smoke Testing, System Testing, Integration Testing, Git Actions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Developing a multi-tenant, pay-as-you-go services platform for wholesale bakery management. Focused on scalable architecture, automated testing, and deployment pipelines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;software-placement-secure-innovation&#34;&gt;Software Placement: Secure Innovation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Gained hands-on experience in secure software development practices, contributing to projects emphasizing security and innovation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;university-of-plymouth&#34;&gt;University of Plymouth&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Pursuing a degree in Software Engineering, with coursework covering advanced topics in development, testing, and project management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;open-source-contributions&#34;&gt;Open-Source Contributions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Projects&lt;/strong&gt;: Contributed to resegva, NovaraPro, Westcountry Bakery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Active in open-source communities, improving code quality and collaborating on diverse projects.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/CV_Website/projects/</link>
+      <pubDate>Tue, 11 Nov 2025 20:07:00 +0000</pubDate>
+      <guid>http://localhost:1313/CV_Website/projects/</guid>
+      <description>&lt;h1 id=&#34;key-projects&#34;&gt;Key Projects&lt;/h1&gt;
+&lt;h2 id=&#34;novarapro&#34;&gt;NovaraPro&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: A multi-tenant SaaS platform for wholesale bakery management. Built with Next.js, featuring CI/CD pipelines, PostgreSQL database, LLM integration, and comprehensive testing suites.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Technologies&lt;/strong&gt;: Next.js, PostgreSQL, Docker, GitHub Actions, LLM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt;: Ongoing development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resegva&#34;&gt;resegva&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Open-source contribution to a project focused on [brief description if known].&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Technologies&lt;/strong&gt;: [Add if known]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link&lt;/strong&gt;: [GitHub link if available]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;westcountry-bakery&#34;&gt;Westcountry Bakery&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Contributed to a bakery management system, enhancing features for operational efficiency.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Technologies&lt;/strong&gt;: [Add if known]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link&lt;/strong&gt;: [GitHub link if available]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-contributions&#34;&gt;Other Contributions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Active in various open-source projects, focusing on code quality, testing, and collaboration.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

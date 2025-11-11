@@ -1,0 +1,92 @@
+baseURL = 'https://jamiedean.github.io/CV_Website/'
+languageCode = 'en-gb'
+title = 'Jamie Dean - Software Engineer'
+theme = 'PaperMod'
+
+[params]
+  author = "Jamie Dean"
+  description = "Portfolio and CV of Jamie Dean, a 25-year-old Software Engineer from the UK"
+  keywords = ["Software Engineer", "UK", "Portfolio", "CV"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowShareButtons = false
+  ShowReadingTime = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    disableHLJS = false
+    disableFingerprinting = false
+    favicon = ""
+    favicon16x16 = ""
+    favicon32x32 = ""
+    apple_touch_icon = ""
+    safari_pinned_tab = ""
+    customCSS = ["css/custom.css"]
+
+  [params.label]
+    text = "Jamie Dean"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = true
+    title = "Jamie Dean"
+    subtitle = "Software Engineer | Final Year Student | UK"
+    imageUrl = ""
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = ""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/jamiedean"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/jamiedean"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:jamie.dean@example.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "skills"
+    name = "Skills"
+    url = "/skills/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50

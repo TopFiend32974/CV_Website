@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/CV_Website/contact/</loc>
+    <lastmod>2025-11-11T20:09:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/skills/</loc>
+    <lastmod>2025-11-11T20:08:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/experience/</loc>
+    <lastmod>2025-11-11T20:07:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/projects/</loc>
+    <lastmod>2025-11-11T20:07:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/about/</loc>
+    <lastmod>2025-11-11T20:05:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/</loc>
+    <lastmod>2025-11-11T20:03:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/CV_Website/tags/</loc>
+  </url>
+</urlset>

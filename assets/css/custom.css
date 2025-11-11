@@ -1,0 +1,59 @@
+/* Custom CSS for dark theme with gold accents */
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Gold accent colors */
+body {
+    --primary-color: #FFD700;
+    --accent-color: #FFA500;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn, button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn:hover, button:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Dark theme adjustments */
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.theme-toggle {
+    color: var(--primary-color);
+}
+
+/* Smooth animations for elements */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* No clipping */
+* {
+    overflow: visible;
+}
