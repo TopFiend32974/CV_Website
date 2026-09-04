@@ -154,7 +154,7 @@ so by the push rule it also pushes to Forgejo (`jdean/portfolio`).
   widths, and fails on any console error or non-2xx request. It saves one screenshot per page to
   `review/` (untracked) for Jamie to eyeball.
 - Forbidden-word check: the build fails if `dist/` contains any of a short list (arr names,
-  "torrent", "tailscale", "vortex.tail").
+  "torrent", "tailscale", "ts.net").
 
 ## Out of scope
 
