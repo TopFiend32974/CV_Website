@@ -52,6 +52,15 @@ async function hideElements(page, selectors, name) {
   }
 }
 
+// A stale or expired login state lands on a sign-in form and would be captured happily. Check the
+// page itself rather than per-app selectors: a login URL, or a password box the viewer can see.
+// `:visible` matters — an app can carry a hidden sign-in form inside a settings panel.
+async function assertNotLoginPage(page) {
+  const looksLikeLogin =
+    /\/login\b/i.test(page.url()) || (await page.locator('input[type=password]:visible').count()) > 0;
+  if (looksLikeLogin) throw new Error('login required or session expired');
+}
+
 const VIEWPORT = { width: 1440, height: 900 };
 const CONTEXT_OPTS = { viewport: VIEWPORT, colorScheme: 'dark', ignoreHTTPSErrors: true, deviceScaleFactor: 1 };
 
@@ -78,6 +87,7 @@ for (const t of cfg.targets) {
     await goto(page, t);
     if (t.wait) await page.waitForSelector(t.wait, { timeout: 20000 });
     await page.waitForTimeout(1500);
+    await assertNotLoginPage(page);
     if (t.hide?.length) await hideElements(page, t.hide, t.name);
     if (t.redact === 'money') await redactMoney(page);
     await page.screenshot({ path: `assets/shots/${t.name}.png`, clip: t.clip ?? undefined });

@@ -48,13 +48,15 @@
       "name": "grafana",
       "url": "https://APP_HOST:PORT/d/DASHBOARD_UID",
       "wait": null,
-      "redact": "none"
+      "redact": "none",
+      "storage": "tools/state-grafana.json"
     },
     {
       "name": "odysseus",
       "url": "https://APP_HOST:PORT/",
       "wait": null,
-      "redact": "none"
+      "redact": "none",
+      "storage": "tools/state-odysseus.json"
     }
   ]
 }
