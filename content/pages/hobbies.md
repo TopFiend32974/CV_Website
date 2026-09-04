@@ -46,7 +46,7 @@ I'm a big fan of AMD GPUs - they offer the best bang for the buck on the used ma
 ![290x Lightning](/assets/photos/290x-lightning-1.jpg)
 
 ### MSI 290x Vapor
-![290x Vapor](/assets/photos/290x-vapor-1.jpg)
+![290x Vapor](/assets/photos/290x-vapor-2.jpg)
 
 ### Radeon HD 7990
 ![7990](/assets/photos/7990-1.jpg)
@@ -55,7 +55,7 @@ I'm a big fan of AMD GPUs - they offer the best bang for the buck on the used ma
 ![7970](/assets/photos/7970-1.jpg)
 
 ### MSI Frozr 7950
-![7950](/assets/photos/7950-1.jpg)
+![7950](/assets/photos/7950-2.jpg)
 - The 'coolest' card I had.
 
 ### Radeon HD 7770
