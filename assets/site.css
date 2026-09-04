@@ -423,7 +423,10 @@ footer a:hover { color: var(--fg); }
   padding-top: clamp(2.5rem, 4.5vw, 3.5rem);
   border-top: 1px solid var(--line);
 }
-.hobby .sub { margin-bottom: 0.5rem; }
+/* The heading is .prose's first child, so `.prose > :first-child { margin-top: 0 }`
+ * zeroes its own top margin — the gap has to come from the wrapper instead, or the
+ * section tick crowds whatever sits above it. */
+.hobby .sub { margin: 2.25rem 0 0.5rem; }
 .hobby .sub > :last-child { margin-bottom: 0; }
 .hobby .sub p { color: var(--muted); font-size: 1.05rem; }
 
@@ -536,7 +539,10 @@ footer a:hover { color: var(--fg); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1px;
-  margin: 1.75rem 0 2.5rem;
+  /* The two groups hold two and three tiles. Capping the plate keeps both the same
+   * width and left-aligned instead of letting the pair stretch across the column. */
+  max-width: 42rem;
+  margin: 1.25rem 0 0;
   background: var(--line);
   border: 1px solid var(--line);
   border-radius: 4px;
