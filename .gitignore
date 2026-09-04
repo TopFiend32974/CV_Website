@@ -1,0 +1,4 @@
+dist/
+review/
+shots.local.json
+node_modules/
