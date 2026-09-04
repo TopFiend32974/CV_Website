@@ -39,4 +39,8 @@ test('cards render name, chips and a status pill', () => {
   assert.ok(html.includes(projects[0].name));
   assert.ok(html.includes('class="chip"'));
   assert.ok(html.includes(`class="pill ${projects[0].status}"`));
+  assert.ok(!html.includes('{{'), 'no leftover template syntax');
+  const all = cardsHtml(projects);
+  assert.equal(all.split('<article class="card').length - 1, projects.length);
+  assert.ok(all.includes('Private repository'));
 });
