@@ -1,0 +1,18 @@
+{
+  "name": "Jamie Dean",
+  "tagline": "Software engineer who builds the whole thing — from the server under the desk to the app on the phone.",
+  "employer": { "name": "MonumentAI", "role": "AI Engineer", "since": "Aug 2026", "url": "https://www.monumentai.com" },
+  "email": "jamie.dean3000@gmail.com",
+  "github": "https://github.com/TopFiend3297401",
+  "linkedin": "https://www.linkedin.com/in/jamie-d-86855a128/",
+  "location": "United Kingdom",
+  "footer": "Aspirations · Jamie Dean",
+  "nav": [
+    { "href": "/about/", "label": "About" },
+    { "href": "/experience/", "label": "Experience" },
+    { "href": "/projects/", "label": "Projects" },
+    { "href": "/skills/", "label": "Skills" },
+    { "href": "/hobbies/", "label": "Hobbies" },
+    { "href": "/contact/", "label": "Contact" }
+  ]
+}

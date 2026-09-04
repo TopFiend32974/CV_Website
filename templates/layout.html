@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-gb" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}} · {{site.name}}</title>
+<meta name="description" content="{{description}}">
+<link rel="icon" href="/assets/logo/jamieLogo.ico">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="page-{{slug}}">
+<header class="top">
+  <a class="brand" href="/"><img src="/assets/logo/jamieLogo.jpg" alt="" width="32" height="32">{{site.name}}</a>
+  <nav>{{#each site.nav}}<a href="{{this.href}}">{{this.label}}</a>{{/each}}</nav>
+  <button class="theme" type="button" aria-label="Toggle theme">◐</button>
+</header>
+<main>{{{body}}}</main>
+<footer><span>{{site.footer}}</span><a href="{{site.github}}">GitHub</a><a href="{{site.linkedin}}">LinkedIn</a><a href="mailto:{{site.email}}">Email</a></footer>
+<script>
+(function(){var k='theme',r=document.documentElement;try{var s=localStorage.getItem(k);if(s)r.dataset.theme=s;}catch(e){}
+document.querySelector('.theme').addEventListener('click',function(){var n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem(k,n);}catch(e){}});})();
+</script>
+</body>
+</html>
