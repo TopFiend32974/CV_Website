@@ -1,6 +1,6 @@
 # Portfolio site rebuild — design
 
-**Date:** 2026-09-04 · **Status:** draft for Jamie's review · **Replaces:** the Hugo/PaperMod site
+**Date:** 2026-09-04 · **Status:** approved by Jamie 2026-09-04 · **Replaces:** the Hugo/PaperMod site
 at `projects-personal/CV_Website-main` (built 2025-11, deployed 2025-12-10, never in git locally).
 
 ## Goal
@@ -32,8 +32,8 @@ Routes are kept so old links keep working: `/`, `/about/`, `/experience/`, `/pro
 | Page | Carried over | Drift fixed |
 |---|---|---|
 | Home | Name, one-line intro, section links | "Final year student" → AI Engineer at MonumentAI; own projects listed as the headline |
-| About | Background paragraph, interests, education line | Degree is complete: *BSc (Hons) Software Engineering, University of Plymouth* — **year and classification to confirm with Jamie** (default: 2026, no grade shown). Stack line updated from "Next.js, PostgreSQL, Docker" to what is actually in use (Python, TypeScript, Rust, Flutter, Podman, Postgres) |
-| Experience | NovaraPro (Lead Developer), Limited Hosting, Secure Innovation placement, Plymouth, open-source line, Google Play developer, FCM hackathon | **MonumentAI added at the top.** NovaraPro marked live at `novarapro.co.uk`. Aspirations line gains PonyPlanner as its first product |
+| About | Background paragraph, interests, education line | Degree is complete: *BSc (Hons) Software Engineering, University of Plymouth — First Class* (confirmed by Jamie 2026-09-04; graduation year shown as 2026). Stack line updated from "Next.js, PostgreSQL, Docker" to what is actually in use (Python, TypeScript, Rust, Flutter, Podman, Postgres) |
+| Experience | NovaraPro (Lead Developer), Limited Hosting, Secure Innovation placement (with the certification earned there), Plymouth, open-source line, Google Play developer, FCM hackathon | **MonumentAI added at the top.** NovaraPro marked live at `novarapro.co.uk`. Aspirations line gains PonyPlanner as its first product |
 | Projects | NovaraPro, Apexio, IronLog, FinalSnag, resegva (NDA), Westcountry Bakery, PhillFab, Immy's Moorland Ponies, the Delphi RSA/OTP line | Rewritten from `projects.json` (below). Broken GitHub links to private repos removed |
 | Skills | Languages, frameworks, databases, tools, testing, certifications (AWS Foundations, Agile), soft skills | Rust no longer "(Learning)"; add Python-heavy, Flutter, QML, MCP servers, local LLM tooling (Ollama, llama.cpp), Prometheus/Grafana, Kubernetes (kind), Playwright. Plain lists, no proficiency figures |
 | Hobbies | **Verbatim:** bikes (five, with specs, mods and the blown ZX-12R), GPU history (nine cards, AMD-only), gym stats and lifts. All photos | "Fedora 43" → **Fedora 44** (Origin, verified). Dual-boot line kept |
@@ -82,7 +82,7 @@ from Origin at a fixed 1440×900 viewport, dark colour scheme, and writes PNGs t
   reachable from Origin over Tailscale; the script does not run anywhere else.
 - **Redaction is per target, in the script, before capture:** Obol blurs every element whose
   text matches a money pattern (`£`, digits with two decimals) via injected CSS; Lyra is shot on
-  a single-album view chosen by Jamie rather than the library home; Forgejo is shot on the
+  a single-album view (Jamie: any album is fine) rather than the library home; Forgejo is shot on the
   explore page, not a repo list. The Vortex hostname is masked in any address-bar-like UI chrome.
 - Captures are committed PNGs. **Jamie reviews the set before the first deploy** (`review/`
   contact sheet, untracked). Re-running the script is the whole refresh procedure.
@@ -141,15 +141,8 @@ Plan: this repo pushes to that GitHub repo as its `github` remote (replacing the
 never runs in the Pages build — the PNGs are already committed. The repo has no `.github/workflows/`,
 so by the push rule it also pushes to Forgejo (`jdean/portfolio`).
 
-**⚠️ Decision for Jamie — one of:**
-
-- **(a)** add `TopFiend3297401` as a collaborator with write access on `TopFiend32974/CV_Website`
-  (one click on GitHub) — recommended, nothing else changes; or
-- **(b)** log `gh` into `TopFiend32974` as a second account on Origin (`! gh auth login`) so the
-  push goes out under that identity.
-
-Deleting and recreating the Pages project as direct-upload would also work but is destructive and
-gains nothing, so it is not proposed.
+**✅ Resolved 2026-09-04:** Jamie added `TopFiend3297401` as a collaborator; `gh api` now reports
+`push: true` on `TopFiend32974/CV_Website`. Pushes go out under the primary identity.
 
 ## Testing
 
@@ -168,8 +161,7 @@ gains nothing, so it is not proposed.
 A blog, a CMS, analytics, a contact form (mailto only), a custom domain, iOS anything, and any
 change to the old Hugo folder beyond reading photos out of it.
 
-## Open questions for Jamie
+## Open questions
 
-1. Degree year and classification to show on About (or neither).
-2. Deploy decision (a) or (b) above.
-3. Which Lyra album/view to screenshot.
+None outstanding. The name of the Secure Innovation certification is not recorded anywhere on
+Origin; the Experience entry says "with certification" until Jamie names it.
