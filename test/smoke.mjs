@@ -20,11 +20,18 @@ const failures = [];
 const browser = await chromium.launch();
 for (const width of [1440, 390]) {
   const page = await browser.newPage({ viewport: { width, height: width > 600 ? 900 : 844 } });
-  page.on('console', (m) => { if (m.type() === 'error') failures.push(`${width} /${r}/: console ${m.text()}`); });
-  page.on('response', (resp) => { if (resp.status() >= 400 && resp.url().startsWith(base)) failures.push(`${width} /${r}/: ${resp.status()} ${resp.url()}`); });
-  var r;
-  for (r of routes) {
+  // `current` is set right before each goto and only advances after networkidle below,
+  // so a late event from the previous route can never be blamed on the next one.
+  let current = '';
+  page.on('console', (m) => { if (m.type() === 'error') failures.push(`${width} /${current}/: console ${m.text()}`); });
+  page.on('response', (resp) => { if (resp.status() >= 400 && resp.url().startsWith(base)) failures.push(`${width} /${current}/: ${resp.status()} ${resp.url()}`); });
+  for (const r of routes) {
+    current = r;
     await page.goto(`${base}/${r}${r ? '/' : ''}`, { waitUntil: 'load' });
+    // Force every loading="lazy" image to be requested before judging the route —
+    // otherwise one below the fold at a narrow width silently never fetches.
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.waitForLoadState('networkidle');
     await page.screenshot({ path: `review/${r || 'home'}-${width}.png`, fullPage: true });
   }
   await page.close();
