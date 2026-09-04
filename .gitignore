@@ -3,3 +3,4 @@ review/
 shots.local.json
 node_modules/
 .superpowers/
+tools/state-*.json

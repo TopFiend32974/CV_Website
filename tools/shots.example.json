@@ -1,0 +1,60 @@
+{
+  "targets": [
+    {
+      "name": "novarapro",
+      "url": "https://novarapro.co.uk/",
+      "wait": null,
+      "redact": "none"
+    },
+    {
+      "name": "phillfab",
+      "url": "https://phillfab.pages.dev/",
+      "wait": null,
+      "redact": "none"
+    },
+    {
+      "name": "immys-moorland-ponies",
+      "url": "https://immys-moorland-ponies.pages.dev/",
+      "wait": null,
+      "redact": "none"
+    },
+    {
+      "name": "lyra",
+      "url": "https://APP_HOST:PORT/#/album/ANY",
+      "wait": null,
+      "redact": "none",
+      "storage": "tools/state-lyra.json"
+    },
+    {
+      "name": "obol",
+      "url": "https://APP_HOST:PORT/",
+      "wait": null,
+      "redact": "money"
+    },
+    {
+      "name": "apexio",
+      "url": "https://APP_HOST:PORT/dashboard",
+      "wait": null,
+      "redact": "none",
+      "hide": []
+    },
+    {
+      "name": "vesta",
+      "url": "https://APP_HOST:PORT/",
+      "wait": null,
+      "redact": "none"
+    },
+    {
+      "name": "grafana",
+      "url": "https://APP_HOST:PORT/d/DASHBOARD_UID",
+      "wait": null,
+      "redact": "none"
+    },
+    {
+      "name": "odysseus",
+      "url": "https://APP_HOST:PORT/",
+      "wait": null,
+      "redact": "none"
+    }
+  ]
+}
