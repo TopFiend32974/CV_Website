@@ -16,6 +16,13 @@ test('build writes every route and is deterministic', () => {
   assert.equal(readFileSync('dist/index.html', 'utf8'), a);
 });
 
+// The mesh VPN's product name is deliberately allowed on the site; the hostname suffix is
+// what actually keeps a private address off a public page. Removing the product name from the
+// list was a decision — removing this one would be an accident, so it is pinned.
+test('the hostname guard is still in the forbidden list', () => {
+  assert.ok(FORBIDDEN.includes('ts.net'));
+});
+
 test('forbidden scan finds a planted word', () => {
   const d = mkdtempSync(join(tmpdir(), 'fb-'));
   writeFileSync(join(d, 'x.html'), `hello ${FORBIDDEN[0]} world`);

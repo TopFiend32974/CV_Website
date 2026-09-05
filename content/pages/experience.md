@@ -74,6 +74,6 @@ Organised and ran a hackathon session to replicate the "hackathon lifestyle". Ou
 <figure><img src="/assets/moments/secure-innovation.jpg" alt="Secure Innovation certificate of completion with a Raspberry Pi 5 kit" loading="lazy"><figcaption>Fourteen months at Secure Innovation, done. Certificate and a Pi 5 to go with it.</figcaption></figure>
 <figure><img src="/assets/moments/resegva.jpg" alt="Presenting the Resegva project on stage" loading="lazy"><figcaption>Presenting Resegva with AJ West at the department expo.</figcaption></figure>
 <figure><img src="/assets/moments/plymhack.jpg" alt="Hackathon table covered in laptops at PlymHack 2026" loading="lazy"><figcaption>PlymHack 2026, hour fourteen or so. We placed second.</figcaption></figure>
-<figure><img src="/assets/moments/cpm.jpg" alt="Computer Product Management cohort group photo" loading="lazy"><figcaption>The Computer Product Management cohort after a Dragons' Den pitch night. I'm the one in the blue jumper.</figcaption></figure>
+<figure class="wide"><img src="/assets/moments/cpm.jpg" alt="Computer Product Management cohort group photo" loading="lazy"><figcaption>The Computer Product Management cohort after a Dragons' Den pitch night. I'm the one in the blue jumper.</figcaption></figure>
 <figure><img src="/assets/moments/omarchy.jpg" alt="Omarchy installing on a laptop" loading="lazy"><figcaption>Viva done, project in. Same evening: wiping the laptop for Omarchy.</figcaption></figure>
 </div>

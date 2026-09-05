@@ -564,6 +564,18 @@ footer a:hover { color: var(--fg); }
   letter-spacing: -0.02em;
   line-height: 1.05;
 }
+/* The aside under a headline figure: "down from 99kg" beneath "72kg". Wrapping the aside
+ * into the headline instead costs a full display-sized line and leaves one plate visibly
+ * taller than the other. The line is reserved on every tile, empty or not, so all five
+ * tiles are one shape and the Body Stats and Strength Feats plates match. */
+.stat .note {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-variation-settings: 'wdth' 86;
+  color: var(--muted);
+  line-height: 1.25;
+  min-height: 1.25em;
+}
 .stat .k {
   font-size: 0.72rem; font-weight: 600;
   font-variation-settings: 'wdth' 78;
@@ -585,8 +597,22 @@ footer a:hover { color: var(--fg); }
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--gap);
   margin: 1.75rem 0 0;
+  /* The wide figure below cannot start mid-row, which would leave a hole beside the
+   * figure before it and strand the last one on a row of its own. `dense` backfills
+   * that hole with a later figure instead. It decouples visual order from source
+   * order for one item; the captions are self-contained, so nothing depends on it. */
+  grid-auto-flow: row dense;
 }
 .moments figure { margin: 0; }
+
+/* A panorama loses its subject to a 4/3 centre crop — the class photo is 2.34:1, so the
+ * crop would keep barely half its width and cut a person off each end. It gets the full
+ * row and its own natural shape instead. */
+.moments .wide { grid-column: 1 / -1; }
+/* Its own 730x312, not `auto`. A lazy image with `aspect-ratio: auto` has no box until it
+ * loads, and an element of zero height need never enter the viewport that would trigger
+ * the load — so `auto` risks a photo that renders at 0px and stays there. */
+.moments .wide img { aspect-ratio: 730 / 312; }
 .moments img {
   display: block;
   width: 100%;
