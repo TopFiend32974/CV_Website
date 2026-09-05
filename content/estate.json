@@ -1,0 +1,20 @@
+[
+  { "id": "origin", "name": "Origin", "kind": "Workstation · Fedora 44 KDE", "status": "live",
+    "specs": ["Ryzen 9 7950X3D (16C/32T)", "64 GB DDR5", "RX 7900 XTX", "5× SSD, no spinning disks", "5 GbE"],
+    "purpose": "Main dev PC and control station; every other machine is driven from here. Sleeps, hosts nothing." },
+  { "id": "oracle", "name": "Oracle", "kind": "Samsung Galaxy Book2 Pro · Omarchy (Arch / Hyprland)", "status": "live",
+    "specs": ["Core i5-1240P (12C/16T)", "8 GB", "Iris Xe", "256 GB NVMe"],
+    "purpose": "Lightweight daily driver and SSH client into Origin and Vortex; also lends Origin its camera and speakers." },
+  { "id": "vortex", "name": "Vortex", "kind": "The always-on server · Fedora + rootless Podman", "status": "live",
+    "specs": ["2× Xeon E5-2670 v2 (20C/40T)", "128 GB DDR3 ECC", "Radeon Vega 56", "Mixed btrfs drives", "1200 W"],
+    "purpose": "Media, photos, music, files, local LLMs, monitoring and a private git forge. The production box." },
+  { "id": "produre", "name": "ProDure", "kind": "Dell PowerEdge R620 · \"professional endurance\"", "status": "staged",
+    "specs": ["2× Xeon E5-2620 (12C/24T)", "192 GB DDR3 ECC", "PERC H710, 4× 2.5\" bays", "iDRAC"],
+    "purpose": "Isolated business box, one VM per project under Proxmox. Sourced; deploys after the network rebuild." },
+  { "id": "inspiron", "name": "Inspiron", "kind": "Dell Inspiron 3505 · Proxmox VE", "status": "live",
+    "specs": ["Ryzen 5 3500U (4C/8T)", "16 GB", "256 GB NVMe"],
+    "purpose": "Proxmox rehearsal box and an independent monitoring node, so alerting survives a Vortex outage." },
+  { "id": "titan", "name": "Titan", "kind": "Planned · big-model CPU inference", "status": "planned",
+    "specs": ["256 GB DDR3 ECC in hand (8× 32 GB)", "Board, CPUs, PSU and GPU not yet chosen", "Target: a 24 GB-class GPU for the hot tensors"],
+    "purpose": "A box for models too big for any GPU: experts in RAM, attention on the card. Platform still open." }
+]

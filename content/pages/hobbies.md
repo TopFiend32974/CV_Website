@@ -35,7 +35,6 @@ I have loved motorbikes since I was 16 years old. My dream bike was a baby blue 
 As a software engineer, technology is a huge part of my life.
 - **OS**: Fedora 44 Linux (Daily Driver).
 - **Gaming**: Dual-boot with Windows 11 for anti-cheat games.
-- **The estate**: Origin (the workstation), Oracle (Galaxy Book2 Pro on Omarchy), Vortex (the always-on server), ProDure (a Dell R620 — "professional endurance"), and an Inspiron laptop running Proxmox.
 
 ## GPU History
 I'm a big fan of AMD GPUs - they offer the best bang for the buck on the used market!

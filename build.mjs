@@ -9,7 +9,11 @@ import { hobbiesHtml } from './lib/hobbies.mjs';
 
 const site = JSON.parse(readFileSync('content/site.json', 'utf8'));
 const tpl = (n) => readFileSync(`templates/${n}.html`, 'utf8');
-const out = 'dist';
+// dist/ unless a caller asks otherwise. The build clears its output directory first, so a
+// second build running concurrently against dist/ empties it under the first one — which is
+// how a test that builds in parallel with test/build.test.mjs turns into a phantom broken
+// link. Tests that need their own copy of the site set BUILD_OUT and stay out of the way.
+const out = process.env.BUILD_OUT || 'dist';
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
 cpSync('assets', join(out, 'assets'), { recursive: true });
