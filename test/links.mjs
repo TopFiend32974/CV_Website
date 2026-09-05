@@ -1,5 +1,5 @@
 // test/links.mjs — node test/links.mjs
-import { readdirSync, readFileSync, statSync, existsSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 
@@ -24,6 +24,7 @@ for (const f of files.filter((f) => /\.(html|css)$/.test(f))) {
 }
 
 const cachePath = 'review/gh-visibility.json';
+mkdirSync('review', { recursive: true });
 const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : {};
 for (const repo of ghRepos) {
   if (!(repo in cache)) {

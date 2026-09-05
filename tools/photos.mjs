@@ -2,7 +2,7 @@
 // Resizes the old site's photos to a 1600px long edge as JPEG q82 and renames them {group}-{n}.jpg.
 import { readdirSync, mkdirSync, statSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { join, basename } from 'node:path';
+import { join } from 'node:path';
 
 const src = process.argv[2] ?? '../CV_Website-main/content/hobbies';
 const out = 'assets/photos';
@@ -16,8 +16,13 @@ const groups = {
   'gpus/7770': '7770', 'gpus/vega56': 'vega56',
 };
 
+// Per-file quality override, keyed on the output filename, so a re-run reproduces the
+// committed files byte-for-byte rather than needing the by-hand re-encode remembered elsewhere.
+const QUALITY = { 'bikes-banner-1.jpg': 75 };
+
 function convert(from, to) {
-  execFileSync('magick', [from, '-auto-orient', '-resize', '1600x1600>', '-strip', '-quality', '82', to]);
+  const quality = QUALITY[to.split('/').pop()] ?? 82;
+  execFileSync('magick', [from, '-auto-orient', '-resize', '1600x1600>', '-strip', '-quality', String(quality), to]);
   console.log(`${to}  ${(statSync(to).size / 1024).toFixed(0)} KB`);
 }
 
