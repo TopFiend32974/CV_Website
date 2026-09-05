@@ -144,6 +144,13 @@ so by the push rule it also pushes to Forgejo (`jdean/portfolio`).
 **✅ Resolved 2026-09-04:** Jamie added `TopFiend3297401` as a collaborator; `gh api` now reports
 `push: true` on `TopFiend32974/CV_Website`. Pushes go out under the primary identity.
 
+**✅ DEPLOYED 2026-09-05** — Cloudflare Pages deployment `13905035-ca77-4a70-855b-12376f248d06`
+(commit `12f3ce9`, stage deploy/success). Verified with curl from Origin: `<title>Home · Jamie Dean`,
+all seven routes 200, 20 cards on `/projects/`, employer link present, assets serving.
+⚠️ The build config was changed **in the dashboard by Jamie**, not via the API — the Cloudflare token
+the MCP holds is read-only for Pages settings (PATCH → error 10000). `NODE_VERSION` was not visible via
+the API afterwards; build system v3's default Node built the site fine.
+
 ## Testing
 
 - `node build.mjs` is deterministic; the same inputs produce a byte-identical `dist/`.
