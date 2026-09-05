@@ -76,6 +76,7 @@ I'm a big fan of AMD GPUs - they offer the best bang for the buck on the used ma
 I run one always-on server and a handful of machines around it, and it has taught me more than any course. Everything on it is self-hosted, reached only over a private mesh network, and written down as decision records so I can't quietly re-learn the same lesson twice.
 
 ## What it taught me
+- **Mesh networking**: Tailscale across every device, HTTPS front doors served over the mesh, nothing exposed to the public internet.
 - **Selective VPN egress**: Proton VPN for exactly the containers that need it, by sharing a network namespace, not by routing the whole box.
 - **Containers without Kubernetes**: rootless Podman under systemd, two users sharing one port space, and what breaks when they collide.
 - **Storage that matches the workload**: per-drive btrfs tiers, and why a database on a consumer SSD stalls — power-loss-protected drives fixed a p99 fsync of 25 ms down to 3 ms.
