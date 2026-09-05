@@ -575,6 +575,48 @@ footer a:hover { color: var(--fg); }
 .goals li { padding: 0.7rem 0; border-top: 1px solid var(--line); }
 .goals li:last-child { border-bottom: 1px solid var(--line); }
 
+/* ---------------------------------------------------------------- moments */
+/* A contact sheet at the foot of the experience page: photographs from the jobs and
+ * projects listed above, cropped to the same 4/3 and 4px radius the project cards use
+ * so the two pages read as one system. It sits inside .prose, so the reading measure
+ * decides the column count rather than a breakpoint. */
+.moments {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--gap);
+  margin: 1.75rem 0 0;
+}
+.moments figure { margin: 0; }
+.moments img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--panel-2);
+  /* `.prose img` carries a 1.5rem block margin meant for a standalone illustration.
+   * Inside the grid the gap does that job, so it has to be cleared here. */
+  margin: 0;
+}
+.moments figcaption {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-variation-settings: 'wdth' 82;
+  letter-spacing: 0.015em;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 0.55rem;
+}
+
+/* --- homelab --- */
+/* Prose only — no per-item treatment, so the bullets are the site's ordinary
+ * label/value plate rows from `.prose li`. All this adds is the breathing room the
+ * other sections get from their `.sub` wrapper, which this one does not have. */
+.hobby.homelab .prose h2 { margin-top: 2.25rem; }
+.hobby.homelab .prose ul { margin-top: 1rem; }
+
 /* ---------------------------------------------------------------- phones */
 @media (max-width: 640px) {
   :root { --gap: 1rem; }
@@ -608,6 +650,9 @@ footer a:hover { color: var(--fg); }
   .kicker { max-width: none; }
 
   .cards, .bike-grid { grid-template-columns: 1fr; }
+
+  /* Two up: five full-width 4/3 photographs would be most of a phone screen each. */
+  .moments { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
 
   /* The rail turns into a vertical spine — a phone scrolls down, not sideways. */
   .timeline {

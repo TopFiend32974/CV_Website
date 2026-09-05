@@ -29,9 +29,9 @@ test('every project is well-formed', () => {
   }
 });
 
-test('ids are unique and there are twenty', () => {
+test('ids are unique and there are twenty-one', () => {
   assert.equal(new Set(projects.map((p) => p.id)).size, projects.length);
-  assert.equal(projects.length, 20);
+  assert.equal(projects.length, 21);
 });
 
 test('cards render name, chips and a status pill', () => {

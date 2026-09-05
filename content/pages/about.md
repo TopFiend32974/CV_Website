@@ -2,15 +2,15 @@
 
 I'm **Jamie Dean**, a software engineer in the UK. By day I'm an AI Engineer at [MonumentAI](https://www.monumentai.com); the rest of the time I build and run my own things — a bakery SaaS with real customers, a music app my household actually uses, and a home server that hosts all of it.
 
-I graduated from the **University of Plymouth** in 2026 with a **First Class BSc (Hons) in Software Engineering**.
+I graduated from the **University of Plymouth** in 2026 with **First Class Honours in BSc (Hons) Computer Science (Software Engineering)**, with a Certificate of Professional Industrial Experience from a 14-month placement.
 
-## Background
+## Where I came from
 
-I've always been fascinated by technology, which led me into software engineering. My journey has taken me from the basics of programming to multi-tenant SaaS platforms, native mobile apps, and the infrastructure underneath them.
+I've worked in a wholefood bakery since 2021, running proovers and ovens and packing orders. NovaraPro exists because I got tired of the paper. Before that I was a carpenter's assistant, a mechanic's assistant in an MOT garage, and the IT technician at a rider-training school. I'm a self-taught motorbike mechanic and I learn by building the thing.
 
-- **Education**: BSc (Hons) Software Engineering, First Class — University of Plymouth, 2026
+- **Education**: BSc (Hons) Computer Science (Software Engineering), First Class Honours — University of Plymouth, 2026
 - **Location**: United Kingdom
-- **Interests**: Software architecture, open source, self-hosting, local AI, and hardware modding
+- **Interests**: Software architecture, open source, self-hosting, local AI, motorbikes, and hardware modding
 
 ## What I do
 

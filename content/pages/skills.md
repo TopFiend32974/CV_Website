@@ -14,6 +14,8 @@
 - **Flutter**
 - **React Native (expo)**
 - **FastAPI / stdlib HTTP**
+- **Firebase**
+- **Google Maps Platform**
 
 ## Data
 - **PostgreSQL** (and pgvector)
